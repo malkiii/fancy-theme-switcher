@@ -1,0 +1,39 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+/>
+<link
+  rel="icon"
+  type="image/svg+xml"
+  href="data:image/svg+xml,<%- include('icons/emoji', { emoji: '🌞' }) %>"
+  media="(prefers-color-scheme: light)"
+/>
+<link
+  rel="icon"
+  type="image/svg+xml"
+  href="data:image/svg+xml,<%- include('icons/emoji', { emoji: '🌙' }) %>"
+  media="(prefers-color-scheme: dark)"
+/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          foreground: 'var(--foreground)',
+          background: 'var(--background)',
+        },
+      },
+    },
+  };
+</script>
+<title>Fancy Theme Switcher</title>
+<meta name="description" content="A theme toggle button using view transition API." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://opengraph.githubassets.com" />
+<meta name="twitter:card" content="summary_large_image" />

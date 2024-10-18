@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('metadata') %>
+    <style type="text/tailwindcss">
+      @layer base {
+        * {
+          @apply border-neutral-300 dark:border-neutral-800;
+        }
+
+        html {
+          @apply font-sans antialiased;
+        }
+
+        body {
+          font-family: 'Inter';
+          -webkit-tap-highlight-color: transparent;
+          @apply text-neutral-900 bg-white dark:text-white dark:bg-neutral-900;
+        }
+
+        p {
+          @apply text-neutral-700 dark:text-neutral-300 text-pretty;
+        }
+
+        .btn {
+          @apply rounded-full border flex items-center justify-center hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors gap-2;
+        }
+
+        ::view-transition-group(root) {
+          @apply animate-none mix-blend-normal;
+        }
+
+        ::view-transition-new(root),
+        .dark::view-transition-old(root) {
+          @apply z-[999] pointer-events-none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="max-w-[65ch] grid gap-8 mx-auto mt-32 max-md:mt-16 px-4">
+      <div class="flex items-center justify-between">
+        <h1 class="font-bold text-3xl">Toggle the theme!</h1>
+        <button id="theme-button" class="btn aspect-square *:size-5 size-9">
+          <%- include('icons/moon') %> <%- include('icons/sun') %>
+        </button>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cumque, numquam perferendis
+        amet distinctio quibusdam nesciunt! Doloribus exercitationem consequuntur vitae voluptatem
+        velit temporibus recusandae eos sed illum, eaque, mollitia molestiae.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio et ea libero dolores
+        magnam, repellat voluptatibus voluptas ducimus a veniam aliquid facere fugit impedit tempora
+        cum! Ullam, minus magni!
+      </p>
+      <a
+        href="https://github.com/malkiii/fancy-theme-switcher"
+        target="_blank"
+        class="btn w-full p-2"
+      >
+        <%- include('icons/github') %> Source code
+      </a>
+    </main>
+    <script type="text/javascript" src="/script.js"></script>
+  </body>
+</html>

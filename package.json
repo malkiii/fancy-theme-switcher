@@ -1,13 +1,7 @@
 {
-  "private": true,
   "name": "fancy-theme-switcher",
-  "description": "A theme toggle button using view transition API.",
+  "private": true,
   "type": "module",
-  "homepage": "https://malkiii.github.io/fancy-theme-switcher",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/malkiii/fancy-theme-switcher"
-  },
   "scripts": {
     "dev": "bun run server.ts --watch",
     "build": "bun run build.ts",
