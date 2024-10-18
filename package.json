@@ -9,7 +9,7 @@
     "url": "https://github.com/malkiii/fancy-theme-switcher"
   },
   "scripts": {
-    "dev": "bun run server.ts",
+    "dev": "bun run server.ts --watch",
     "build": "bun run build.ts",
     "clean": "rimraf dist"
   },

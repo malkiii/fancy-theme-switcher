@@ -13,6 +13,7 @@
 /out
 /dist
 /build
+/public/*.html
 
 # misc
 .DS_Store
