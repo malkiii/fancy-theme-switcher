@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "fancy-theme-switcher",
+  "description": "A theme toggle button using view transition API.",
+  "type": "module",
+  "homepage": "https://malkiii.github.io/fancy-theme-switcher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malkiii/fancy-theme-switcher"
+  },
+  "scripts": {
+    "dev": "bun run server.ts",
+    "build": "bun run build.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "rimraf": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "prettier": {
+    "semi": true,
+    "tabWidth": 2,
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
