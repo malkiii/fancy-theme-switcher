@@ -12,7 +12,7 @@ app.set('views', path.join(process.cwd(), 'views'));
 
 // Define routes
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', { basePath: '' });
 });
 
 // Start the server
